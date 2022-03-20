@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #000;
+}
+
+.navbar {
+    width: 88%;
+    margin: auto;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'STREET demo';
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'STREET demo';
+}
+
+hr {
+    border-color: rgb(160, 12, 12);
+    margin-bottom: auto;
+    border-top: none;
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    background: #000;
+}
+
+.container .heading {
+    font-size: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: 'STREET demo';
+    color: #fff;
+}
+
+.container .music-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .music-container .box {
+    height: 16rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    background: #0c0a0c;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem rgb(160, 12, 12);
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.container .music-container .box .image {
+    height: 100%;
+    width: 25%;
+}
+
+.container .music-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .music-container .box .music {
+    width: 60%;
+}
+
+.container .music-container .box .music audio {
+    width: 80%;
+    outline: none;
+}
+
+
+h3 {
+    font-size: 17px;
+    margin-left: 10px;
+    color: #fff
+}
+
+@media (max-width:600px) {
+    .container .music-container .box {
+        height: 27rem;
+        width: 60%;
+        flex-flow: column;
+    }
+
+    audio::-webkit-media-controls-play-button {
+        border-radius: 20px;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+
+    footer {
+        background: #000;
+        color: #fff;
+        width: 100%;
+        bottom: 0px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
